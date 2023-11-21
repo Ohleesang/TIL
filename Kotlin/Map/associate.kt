@@ -69,3 +69,7 @@ players.associateByTo(existingMap, { it }, { it.toUpperCase() })
 @ 4,5번 함수는 위의 예제와 다르게, 기존 맵에 요소를 추가하는데 사용된다.
 각 람다식의 표현 방식이 다를 뿐 같은 기능을 한다.
 
+# 결론
+
+Map 이라는 자료구조를 이용할때 보통 선언하거나 기존 배열값을 
+치환할때 associate 함수를 쓰면 유용하다. 
