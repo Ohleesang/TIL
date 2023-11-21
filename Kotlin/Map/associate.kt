@@ -1,4 +1,4 @@
-# associate?
+# associate ?
 - Collection 의 각 요소에 대해 키와 값을 결정하여 맵을 생성한다.
 이 함수는 고차 함수(higher-order function)으로,람다 식을 인자로 받는다. 
 각 요소에 람다식을 실행하고,
@@ -49,8 +49,8 @@ val playerMap = players.associate { it to it.length }
 
 @ 각 함수들을보면 람다 식에 따라 기준이 다르다는걸 알수있다. 
 associate 의 경우는 {key to value} 두개의 값을 기준으로 들어가고
-..By 의 경우는 Key 에 {람다 식}의 값이 들어가고
-..With 의 경우는 Value 에 {람다 식}의 값이 들어간다.
+..By 의 경우는 Key 에 {람다 식} 의 값이 들어가고
+..With 의 경우는 Value 에 {람다 식} 의 값이 들어간다.
 
 4. associateTo
 
