@@ -4,7 +4,7 @@
     이용하여 효율적으로 값을 구하는 알고리즘 설계 기법
 >> 즉 답을 재활용한다는 느낌이다!!      
 
-![출처:https://i.namu.wiki/i/F5NpiiqJwMGc5Y-ou7tAO2ML2KL3M7pOjIovWzwRUdBiNqYAZ6YCuskYBb2aGCI1vzJE7uqvyl-VGn8wd3wyuuKtW14DL98VbwvdpZm3xRZwoxKPSBU6HBaz0xKfT1XHjc9JIjB3EVUi6V7BNA-95Q.webp ](F5NpiiqJwMGc5Y-ou7tAO2ML2KL3M7pOjIovWzwRUdBiNqYAZ6YCuskYBb2aGCI1vzJE7uqvyl-VGn8wd3wyuuKtW14DL98VbwvdpZm3xRZwoxKPSBU6HBaz0xKfT1XHjc9JIjB3EVUi6V7BNA-95Q-1.webp)
+![동적 프로그래밍](https://github.com/Ohleesang/TIL/assets/148442711/23961a57-bdf3-43e4-85c5-9f789a5897bd)
 
 * 주어진 문제를 부분 문제로 나누어 각 부분 문제의 답을 계산 
 * 그 결과값으로 원래 문제의 답을 산출 
@@ -26,7 +26,8 @@ fun fibo(n :Int):Int{
 ```
 함수가 호출되면, 메모리의 Stack 에 데이터가 쌓으므로 fibo(5)의 경우, 총 15번의 함수 호출이 발생한다...
 
-![Alt text](dc422Se8sIsi_8DsYPfCN_nZhdNE7tZ6E9-2PYrqc1ADpRaJULyTI5CS8eQEZEeZOKszPyv9VcEhtruromCu_v414S8JyrFdhbmbsI97ZbgS5LnaVui6uWT0v_FKkXl6SzFziJ7PzhnA6WanvY0htw.webp)
+![동적 프로그래밍(피보나치)](https://github.com/Ohleesang/TIL/assets/148442711/16d6b43a-63b4-4d0c-b060-3fe03e78f102)
+
 
 이 경우, n의 크기가 증가하면 증가할수록 시간,공간 복잡도가 기하급수적 으로 증가하기 떄문에 효율적인 알고리즘이라고 볼 수 없다.
  ### 이로 인해 ' 이미 구했던 값들을 이용하여 재활용하자 ' 가 동적 프로그래밍의 접근 방식이다.   
