@@ -127,7 +127,7 @@ var formattedDate : String = date.format(dateFormatter)
 3. 데이터 변환
 > 추출된 정보를 프로그램이나 시스템에서 사용할 수 있는 형식으로 변환
 
-위의 6,7번처럼 문자열에서 LocalDate를  저장하기 위해 DateFommater 객체를 이용하여 파싱을 진핼 할 수 있다.
+위의 6,7번처럼 문자열에서 LocalDate를  저장하기 위해 DateFommater 객체를 이용하여 파싱을 진행 할 수 있다.
 
 
 
