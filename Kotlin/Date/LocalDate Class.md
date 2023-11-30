@@ -1,7 +1,7 @@
 # LocalDate Class(날짜 클래스)
 ## 날짜(Date)를 다루는 클래스
-> 기존 Data Class보다 항상 된 기능을 제공.
-> Data Class와 다르게 날짜만을 다루기 위한 클래스
+> 기존 Date Class보다 항상 된 기능을 제공.
+> Date Class와 다르게 날짜만을 다루기 위한 클래스
 ```kotlin
 import java.time.LocalDate
 
@@ -12,8 +12,8 @@ val date :LocalDate = LocalDate.of(2021,11,30)
 
 ```
 
-## 왜 Data Class 보다 좋은가
-### Data Class 의 단점
+## 왜 Date Class 보다 좋은가
+### Date Class 의 단점
 - 가변성
     > 보통 날짜 같은 일정한 값에 변경이 가능하면, 코드가 불안정 해진다. 
 - 논리적 에러 가능성
@@ -21,12 +21,12 @@ val date :LocalDate = LocalDate.of(2021,11,30)
 - 쓰레드 안정성 문제
     > 가변성으로 인해, Thread에서 안정성이 없다.  
 - API의 한계
-    > Data 는 날짜와 시간을 동시에 다루기 떄문에 더 복잡하다
+    > Date 는 날짜와 시간을 동시에 다루기 떄문에 더 복잡하다
 - Java 8 이전의 API
     > 너무 옛날에 만들어진 클래스이다. 이로인해 java.time 에서 더 나은 클래스를 제공한다.
 
 
-### 그러므로, Data Class 의 단점을 보완하여, 
+### 그러므로, Date Class 의 단점을 보완하여, 
 ### 더 나은 환경을 제공하는 LocalData Class 를 쓰는것을 권장한다!
 
 ## Kotlin에서 LocalDate Class
