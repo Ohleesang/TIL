@@ -29,7 +29,8 @@ numbers?.forEach { number ->
 ### 2. 컬렉션을 수정하는경우
 forEach 로 반복중에 컬렉션을 수정하려고 하면 오류가 발생한다!
 > ConcurrentModificationException
- 새로운 컬렉션을 만들어서 처리하거나 대신에 Iterator를 사용하자.
+
+새로운 컬렉션을 만들어서 처리하거나 대신에 Iterator를 사용하자.
 - Iterator : 컬렉션을 순회하면서 각 요소에 접근할때 사용되는 인터페이스
     -  next(),hasNext()
 
