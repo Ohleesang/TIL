@@ -7,7 +7,7 @@ abstract class LayoutInflater
 #### 동적으로 UI를 다루고싶을때 쓰는 기본적인 클래스!
 
 ## Inflation(인플레이션)
-일반적으로 메모리에 객체를 생성하는 과정이다. 안드로이드에서는
+일반적으로 메모리에 객체를 생성하는 과정을 의미하지만. 안드로이드에서는
 #### XML에 정의된 레이아웃 파일을 실제 런타임 뷰 객체로 변환하는 과정을 의미한다.
 > 앱에서 UI를 설계할때, 레이아웃을 XML파일에 정의하고 앱이 실행되면 XML 파일을 메모리에 로드하고 런타임에 실제 뷰 객체로 변환하는 과정
 
@@ -56,8 +56,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 ### 즉, 메인으로 쓸 레이아웃을 LayoutInflater를 이용하여 ViewBinding객체로 인플레이트 한 이후, Binding 객체에서 동적으로 UI를 처리한다.
 
-## 레이아웃의 재사용
-기존 xml에서 include 기능을 LayoutInflater와 ViewBinding 을 사용하여 구현이 가능하다.
+### 레이아웃의 재사용
+기존 xml에서 include 태그를 LayoutInflater와 ViewBinding 을 사용하여 구현이 가능하다.
 ```xml
 <!-- main_layout.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
