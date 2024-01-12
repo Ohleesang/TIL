@@ -28,12 +28,14 @@
  - RecyclerView에 데이터들을 보여주기위한 레이아웃을 지정함
 
 ## 시연 영상
-<video src=https://github.com/Ohleesang/TIL/assets/148442711/d23dc2b0-65c1-4497-bd82-4b55fd11aea2 width=180></video>
+![ezgif-1-8f46d72922](https://github.com/Ohleesang/TIL/assets/148442711/ab2fe195-5821-478a-b7bd-7ad2211748c2)
+
 
 
 ## 트러블 슈팅
 
-네비게이션 아이콘을 클릭 했을때 프래그먼트는 변경되지만 해당 아이콘이 보이지 않는다.
+### 1. 네비게이션 아이콘을 클릭 했을때 프래그먼트는 변경되지만 해당 아이콘이 보이지 않는다.
+![295184062-9dc39ae3-d8ab-49ee-aa60-8a24d8437502](https://github.com/Ohleesang/TIL/assets/148442711/3cb155a0-de7d-49ee-883c-d05e1f3b7631)
 
   → 아이콘 이미지를 Vector 소스 를 PNG 파일로 변경해서 생긴 문제
 
@@ -65,6 +67,32 @@ val navView: BottomNavigationView = binding.navView
 [자세히 보기](https://github.com/Ohleesang/TIL/blob/9a34d889c9a95b744bb13ef0dc8ad087be69f80b/Android/%EB%84%A4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%20%EC%95%84%EC%9D%B4%EC%BD%98%20%ED%95%AD%EC%83%81%20%EB%B3%B4%EC%9D%B4%EA%B2%8C%20%ED%95%98%EA%B8%B0.md)
 
  
+### 2. 스크롤 뷰(ScrollView in RecylerView) 에 의한 스크롤이 부드럽지 않음
+![ezgif-1-c16d559b6b](https://github.com/Ohleesang/TIL/assets/148442711/01867f88-c5a5-4da8-b1cb-f697720d95aa)
+
+→ 수직으로 스크롤할때 중첩되기 때문에  충돌이 발생
+
+### 해결
+
+수직으로 스크롤할때에는 스크롤뷰만 작동하게 변경하였다.
+
+```xml
+<ScrollView>
+
+...
+
+<androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_rest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"/>
+
+...
+
+</ScrollView>
+```
+
+[fragment_home]
 
 ## 느낀 점
 
