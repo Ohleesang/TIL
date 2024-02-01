@@ -125,7 +125,7 @@ interface DaumSearchApi {
    - key-value 형식으로 데이터를 저장   
    
 #### 2. .gitignore에 추가하여 소스 코드 관리 시스템에 포함되지 않도록 한다.
-   - 디렉토리 보여주는 부분 왼쪽 좌상단에 app -> Project
+   - 디렉토리 보여주는 부분 왼쪽 좌상단에 Android -> Project
    - .gitnore 파일에 gradle.properties 추가
 
 ```.gitnore
