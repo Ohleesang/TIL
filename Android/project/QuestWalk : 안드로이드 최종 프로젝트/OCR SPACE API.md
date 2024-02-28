@@ -132,3 +132,10 @@ https://api.ocr.space/parse/image
 |MaxHeight|integer| Line 중의 가장큰 Height
 |MinTop|integer| 좌상점에서 line의 최소거리(px)
 
+### FileParseExitCode
+- 0: 파일을 찾을수 없음
+- 1: 성공
+- -10: 파싱 에러
+- -20: 타임 초과
+- -30: 유효성 에러
+- -99: 알수 없는 에러
